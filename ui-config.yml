@@ -1,0 +1,21 @@
+---
+antora:
+  name: modules
+  dir: www
+  modules:
+    - name: "01-installing-pcp"
+      label: "Installing Pcp"
+      solveButton: true
+    - name: "02-pcp-system-metrics"
+      label: "Pcp System Metrics"
+      solveButton: true
+    - name: "03-pcp-web-console"
+      label: "Pcp Web Console"
+      solveButton: true
+    - name: "04-troubleshooting-cpu"
+      label: "Troubleshooting Cpu"
+      solveButton: true
+
+tabs:
+  - name: ">_ terminal"
+    url: /wetty
