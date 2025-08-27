@@ -12,7 +12,7 @@ dnf install -y pcp-zeroconf
 ----
 
 This RPM includes a number of PCP-related tools as dependencies to the
-main pcp package. This is prefered in the case that you need to do
+main pcp package. This is preferred in the case that you need to do
 deeper performance analysis.
 
 Next, start and enable the *PCP’s Collector Daemon (PMCD)* to start
@@ -32,6 +32,19 @@ systemctl status pmcd --no-pager
 
 As shown in the output snippet above, verify that your system’s pmcd
 service is active and running.
+
+We'll need to enable the `+pmlogger+` service. Using the pmlogger tool, you can:
+
+- Create the archived logs of selected metrics on the system
+- Specify which metrics are recorded on the system and how often
+
+Let's enable the `+pmlogger+` service.
+
+[source,bash,run]
+----
+systemctl enable --now pmlogger
+----
+
 
 Finally, look at the basic system information provided by the PCP
 command:
