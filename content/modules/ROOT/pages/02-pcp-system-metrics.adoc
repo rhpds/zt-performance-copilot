@@ -30,3 +30,6 @@ every 1 second (-t 1) during an overall 5 second time window (-T 5):
 ----
 pmval -t 1 -T 5 kernel.percpu.cpu.idle
 ----
+
+.pmval
+image::pmval.png[pmval]
