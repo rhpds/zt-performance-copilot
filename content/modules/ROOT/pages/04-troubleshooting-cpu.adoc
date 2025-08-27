@@ -44,7 +44,10 @@ We can take a closer look at the `+Load+` event by clicking on it.
 .Logs
 image::investigate_logs.png[investigate logs]
 
-Click on `+View all logs+` to see the log entries and time stamps that help you walk back to what caused the spike to begin. Notice that the `+stress-ng+` process has been identified as the root cause.
+Click on `+View detailed logs+` to see the log entries and time stamps that help you walk back to what caused the spike to begin. Notice that the `+stress-ng+` process has been identified as the root cause.
+
+.Logs
+image::investigate_logs_detail.png[investigate logs detail]
 
 This lab barely scratches the surface of what’s available in the PCP command line tools. For more information please visit our documentation:
 https://access.redhat.com/documentation/gu-in/red_hat_enterprise_linux/9/html/monitoring_and_managing_system_status_and_performance/setting-up-pcp_monitoring-and-managing-system-status-and-performance#doc-wrapper[Monitoring
