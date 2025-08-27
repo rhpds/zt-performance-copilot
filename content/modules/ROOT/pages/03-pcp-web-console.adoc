@@ -2,21 +2,18 @@
 
 == Utilizing PCP with the Web Console
 
-One of the easiest ways to observe the performance status of a RHEL
-server is via the Web Console, based on the upstream Cockpit project. As
-the web console is built to be modular, you will need to install the
-plugin for PCP:
+One of the easiest ways to observe the performance status of a RHEL server is via the Web Console, based on the upstream Cockpit project.
+
+We'll need to enable the `+pmlogger+` service. Using the pmlogger tool, you can:
+
+- Create the archived logs of selected metrics on the system
+- Specify which metrics are recorded on the system and how often
+
+Let's enable the `+pmlogger+` service.
 
 [source,bash,run]
 ----
-dnf install -y cockpit-pcp
-----
-
-Then start the web console:
-
-[source,bash,run]
-----
-systemctl enable --now cockpit.socket
+systemctl enable --now pmlogger
 ----
 
 Click on the `+RHEL Webconsole+` tab.
