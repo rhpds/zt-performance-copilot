@@ -1,3 +1,5 @@
+:imagesdir: ../assets/images
+
 == Utilizing PCP with the Web Console
 
 One of the easiest ways to observe the performance status of a RHEL
@@ -17,10 +19,10 @@ Then start the web console:
 systemctl enable --now cockpit.socket
 ----
 
-Click on the `+RHEL Web Console+` tab.
+Click on the `+RHEL Webconsole+` tab.
 
 .web console
-image::../assets/webconsole.png[web console]
+image::webconsole.png[web console]
 
 Log into the Web Console with the following credentials.
 
@@ -33,9 +35,9 @@ rhel
 
 Password
 
-[source,bash]
+[source,js,subs="+macros,+attributes",role=execute]
 ----
-redhat
+{bastion_ssh_password}
 ----
 
 Give yourself `+administrative access+` by clicking on
